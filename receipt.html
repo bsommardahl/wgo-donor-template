@@ -5,147 +5,214 @@
         href="https://fonts.googleapis.com/css2?family=Arial&amp;family=Roboto&amp;family=RobotoDraft,+Helvetica, Arial, sans+serif:wght@400;700&amp;display=swap"
         id="DynamicFonts">
     <style>
-        body { 
-	background: white; 
-	font-size: 12pt; 
-}
-	
-#menu { 
-	display: none; 
-}
-	
-#wrapper, 
-#content { 
-	width: auto; 
-	margin: 0 5%; 
-	padding: 0; 
-	border: 0; 
-	float: none !important; 
-	color: black; 
-	background: transparent none; 
-}
-	
-div#content { 
-	margin: 10% 0; 
-	padding-top: 1em; 
-	border-top: 1px solid #930; 
-}
-	
-div#mast { 
-	margin-bottom: -8px; 
-}
-	
-div#mast img { 
-	vertical-align: bottom; 
-}
-	
-a:link, 
-a:visited { 
-	color: #520; 
-	background: transparent; 
-	font-weight: bold; 
-	text-decoration: underline; 
-}
+        body {
+            background: #CCC;
+            width: 100%;
+            font-size: 10pt;
+        }
 
-      .text-center { text-align: center; }
-        .printable-page { }
+        #page {
+            width: 675px;
+            padding: 10px;
+            margin: auto;
+            padding: 0;
+            border: 0;
+            float: none !important;
+            color: black;
+            background: white;
+            border: 1px solid #EEEEEE
+        }
 
-      .border-black { solid 1px #000; }
-      
-        .white-box { background: #FFF; border: 1px solid #000; } 
-      .p-5 { padding: 25px; }
+        a:link,
+        a:visited {
+            color: #520;
+            background: transparent;
+            font-weight: bold;
+            text-decoration: underline;
+        }
 
-      
-      .fill-width { width: 100% }
-      
+        h1,
+        h2,
+        h3 {
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .border-black {
+            solid 1px #000;
+        }
+
+        .white-box {
+            background: #FFF;
+            border: 1px solid #000;
+        }
+
+        .p-5 {
+            padding: 25px;
+        }
+
+        .p-3 {
+            padding: 15px;
+        }
+
+        .p-2 {
+            padding: 10px;
+        }
+
+        .p-1 {
+            padding: 5px;
+        }
+
+
+        .fill-width {
+            width: 100%
+        }
+
+        .logo {
+            width: 230px;
+        }
+
         .cut-out {
             background-color: #d3e6f5;
             border-bottom: 2px dashed #000000;
-          padding: 20px;
+            margin: 20px;
+
         }
 
-      .cut-out table { width: 100%; }
-      .cut-out table tr td { padding: 20px; width: 50%; }
-        
-      .mt-5 { margin-top: 25px; }
-      
-        .row { display: block; }
-        .col33 { width: 33%; display: inline-block; height: 100%; }
-        .letter { padding: 20px; }
-        .letter .sign-off { margin-top: 20px; }
+        .cut-out table {
+            width: 100%;
+        }
 
-        .rounded { border-radius: 15px; }
+        .cut-out table tr td {
+            padding: 20px;
+            width: 50%;
+            vertical-align: top;
+        }
+
+        .mt-5 {
+            margin-top: 25px;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .row {
+            display: block;
+        }
+
+        .col33 {
+            width: 33%;
+            display: inline-block;
+            height: 100%;
+        }
+
+        .letter {
+            padding: 0 20px;
+        }
+
+        .letter .sign-off {
+            margin-top: 20px;
+        }
+
+        .rounded {
+            border-radius: 15px;
+        }
 
         .receipt-detail {
             background-color: #d3e6f5;
-          padding: 10px;
-          border: solid 1px #000;
+            padding: 10px;
+            border: solid 1px #000;
         }
 
-        .receipt-detail-table {
+        .receipt-detail-table .col33 {
             background-color: #ffffff;
+            width: 32%;
+            margin-left: 5px;
+            font-size: .8em;
         }
 
-        .receipt-detail-table .title { border: 1px solid #000; font-weight: bold; text-align: center; padding: 10px; }
-        .receipt-detail-table .value { text-align: center; border: 1px solid #000; padding: 10px; }
-        
-        .disclaimer { font-size: .8em;}
+        .receipt-detail-table .title {
+            border: 1px solid #000;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .receipt-detail-table .value {
+            text-align: center;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        .disclaimer {
+            font-size: .8em;
+        }
     </style>
 </head>
 
 <body>
 
-    <div id="content">
+    <div id="page">
         <div class="cut-out">
 
-              <table>
-                <tr><td>
-                    <div class="white-box rounded text-center">
-                    <img class="p-5" src="https://virtuous-email.s3.amazonaws.com/Email/org_1005/logo-address5.png" />
-                  </div>
-                  <p>Please indicate any change in your address to keep us updated.</p>
-                    <p>IMPORTANT: PLEASE RETURN THIS TOP PORTION WITH YOUR NEXT GIFT.</p>
+            <table>
+                <tr>
+                    <td class="w-50">
+                        <div class="white-box rounded text-center fill-width">
+                            <img class="logo p-2"
+                                src="https://virtuous-email.s3.amazonaws.com/Email/org_1005/logo-address5.png" />
+                        </div>
+                        <p>Please indicate any change in your address to keep us updated.</p>
+                        <p>IMPORTANT: PLEASE RETURN THIS TOP PORTION WITH YOUR NEXT GIFT.</p>
 
-                    <div class="white-box rounded fill-width">
-                        &nbsp;<br/>
-                        &nbsp;<br/>
-                        &nbsp;<br/>
-                        &nbsp;<br/>
-                        &nbsp;<br/>
-                    </div>
+                        <div class="white-box rounded fill-width">
+                            &nbsp;<br />
+                            &nbsp;<br />
+                            &nbsp;<br />
+                            &nbsp;<br />
+                            &nbsp;<br />
+                        </div>
 
-                  </td>
-                  
-                <td>
-                     
-                  <h1 class="text-center">THANK YOU!</h1>
-                  <p class="text-center">PLEASE DESIGNATE MY NEXT GIFT TO:</p>
+                    </td>
 
-                  <div class="white-box rounded fill-width">
-<div class="p-5">                  
-                    __ Same as last <br/>
-                    __ General Fund<br/>
-                    __ CarePay<br/>
-                    __ Children's Ministry<br/>
-                    __ Belize<br/>
-                    __ Serve Teams (Medical/Evangelism)<br/>
-                    __ WGOKids ( All kids)
-                  </div> 
-                  </div> 
-                  
-                  <div class="white-box fill-width rounded mt-5 text-center"><div class="p-5">  
-                    Account: %ContactId%
-                  </div></div>
-                
-                  </td></tr>
-              </table>
+                    <td>
+
+                        <h1 class="text-center">THANK YOU!</h1>
+                        <p class="text-center">PLEASE DESIGNATE MY NEXT GIFT TO:</p>
+
+                        <div class="white-box rounded fill-width">
+                            <div class="p-2 bold">
+                                __ Same as last <br />
+                                __ General Fund<br />
+                                __ CarePay<br />
+                                __ Children's Ministry<br />
+                                __ Belize<br />
+                                __ Serve Teams (Medical/Evangelism)<br />
+                                __ WGOKids ( All kids)
+                            </div>
+                        </div>
+
+                        <div class="white-box fill-width rounded mt-5 text-center">
+                            <div class="p-2">
+                                Account: %ContactId%
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
 
         </div>
 
         <div class="letter">
 
-          <p>Dear %ContactName%,</p>
-          <p>Thank you so much for faithfully standing by our
+            <p>Dear %ContactName%,</p>
+            <p>Thank you so much for faithfully standing by our
                 side in 2021! Your generosity is not taken lightly. I thank the Lord for your friendship and
                 partnership.
                 Whether you supported a missionary, gave to CarePay, or gave financially to support our children at
@@ -165,26 +232,29 @@ a:visited {
 
         </div>
 
-        <div class="receipt-detail border-black">
-            <h3>TAX DEDUCTIBLE RECEIPT:</h3>
+        <div class="p-3">
+            <div class="receipt-detail border-black">
+                <h3>TAX DEDUCTIBLE RECEIPT:</h3>
 
-            <div class="receipt-detail-table">
+                <div class="receipt-detail-table">
 
-                <div class="row">
-                    <div class="col33">
-                        <div class="title">2021 Total Giving</div>
-                        <div class="value">%LastCalendarYearGiving%</div>
+                    <div class="row">
+                        <div class="col33">
+                            <div class="title">2021 Total Giving</div>
+                            <div class="value">%LastCalendarYearGiving%</div>
+                        </div>
+
+                        <div class="col33">
+                            <div class="title">2021 Tax Deductible Amount</div>
+                            <div class="value">%TotalDeductibleGiftAmount%</div>
+                        </div>
+
+                        <div class="col33">
+                            <div class="title">2021 Non Tax Deductible Amount</div>
+                            <div class="value">%TotalNondeductibleGiftAmount%</div>
+                        </div>
                     </div>
 
-                    <div class="col33">
-                        <div class="title">2021 Tax Deductible Amount</div>
-                        <div class="value">%TotalDeductibleGiftAmount%</div>
-                    </div>
-
-                    <div class="col33">
-                        <div class="title">2021 Non Tax Deductible Amount</div>
-                        <div class="value">%TotalNondeductibleGiftAmount%</div>
-                    </div>
                 </div>
 
             </div>

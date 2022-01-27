@@ -31,13 +31,8 @@
             text-decoration: underline;
         }
 
-        h1,
-        h2,
-        h3 {
-            margin-top: 0px;
-            padding-top: 0px;
-        }
-
+        h1, h2, h3, h4 { margin-top: 0px; padding-top: 0px; }
+      
         .text-center {
             text-align: center;
         }
@@ -54,15 +49,12 @@
         .p-5 {
             padding: 25px;
         }
-
         .p-3 {
             padding: 15px;
         }
-
         .p-2 {
             padding: 10px;
         }
-
         .p-1 {
             padding: 5px;
         }
@@ -71,16 +63,14 @@
         .fill-width {
             width: 100%
         }
-
-        .logo {
-            width: 230px;
-        }
+      
+        .logo { width: 230px; }
 
         .cut-out {
             background-color: #d3e6f5;
             border-bottom: 2px dashed #000000;
-            margin: 20px;
-
+            margin: 20px;  
+            
         }
 
         .cut-out table {
@@ -97,10 +87,8 @@
             margin-top: 25px;
         }
 
-        .w-50 {
-            width: 50%;
-        }
-
+        .w-50 { width: 50%; }
+      
         .row {
             display: block;
         }
@@ -131,9 +119,9 @@
 
         .receipt-detail-table .col33 {
             background-color: #ffffff;
-            width: 32%;
-            margin-left: 5px;
-            font-size: .8em;
+          width: 32%;
+          margin-left: 5px;
+          font-size: .8em;
         }
 
         .receipt-detail-table .title {
@@ -150,7 +138,8 @@
         }
 
         .disclaimer {
-            font-size: .8em;
+            font-size: .75em;
+          margin-bottom: 0px;
         }
     </style>
 </head>
@@ -183,7 +172,7 @@
                     <td>
 
                         <h1 class="text-center">THANK YOU!</h1>
-                        <p class="text-center">PLEASE DESIGNATE MY NEXT GIFT TO:</p>
+                        <h4 class="text-center">PLEASE DESIGNATE MY NEXT GIFT TO:</h4>
 
                         <div class="white-box rounded fill-width">
                             <div class="p-2 bold">
@@ -219,7 +208,7 @@
                 Rancho
                 Ebenezer, you are the reason we made an eternal difference in 2021.</p>
 
-            <p class="sign-off">
+            <div class="sign-off">
                 <img src="https://virtuousprodv2.blob.core.windows.net/public/1197/images/Abel%20Pe%C3%B1a%20Sig.jpg"
                     alt="" width="136" height="43" />
 
@@ -227,39 +216,37 @@
 
             <p>P.S. Please prayerfully consider sending a gift today to
                 help increase the impact of World Gospel Outreach.</p>
-            </p>
-
+            
+          </div>
 
         </div>
 
-        <div class="p-3">
-            <div class="receipt-detail border-black">
-                <h3>TAX DEDUCTIBLE RECEIPT:</h3>
+      <div class="p-3">      
+        <div class="receipt-detail border-black">
+            <h3>TAX DEDUCTIBLE RECEIPT:</h3>
 
-                <div class="receipt-detail-table">
+            <div class="receipt-detail-table">
 
-                    <div class="row">
-                        <div class="col33">
-                            <div class="title">2021 Total Giving</div>
-                            <div class="value">%LastCalendarYearGiving%</div>
-                        </div>
-
-                        <div class="col33">
-                            <div class="title">2021 Tax Deductible Amount</div>
-                            <div class="value">%TotalDeductibleGiftAmount%</div>
-                        </div>
-
-                        <div class="col33">
-                            <div class="title">2021 Non Tax Deductible Amount</div>
-                            <div class="value">%TotalNondeductibleGiftAmount%</div>
-                        </div>
+                <div class="row">
+                    <div class="col33">
+                        <div class="title">2021 Total Giving</div>
+                        <div class="value">%LastCalendarYearGiving%</div>
                     </div>
 
+                    <div class="col33">
+                        <div class="title">2021 Tax Deductible Amount</div>
+                        <div class="value">%TotalDeductibleGiftAmount%</div>
+                    </div>
+
+                    <div class="col33">
+                        <div class="title">2021 Non Tax Deductible Amount</div>
+                        <div class="value">%TotalNondeductibleGiftAmount%</div>
+                    </div>
                 </div>
 
             </div>
 
-            <p class="disclaimer">
+           <p class="disclaimer">
                 Your Gifts are tax-deductible to the extent allowed by the law. Every effort will be made to apply your
                 gift according to an indicated preference if any was given. However, the receipt of your donation to WGO
                 is
@@ -271,8 +258,11 @@
                 financial audit as one of its many requirements for membership. Other than reflected on this receipt, no
                 goods or services were provided in exchange for this gift. WGO's EIN tax # is: 76-0094478.
             </p>
-        </div>
+            </div>
 
+       
+            
+        </div>
 
     </div>
 
